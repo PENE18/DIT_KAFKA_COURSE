@@ -1,4 +1,4 @@
-# TP Kafka — Installation, Administration et Streaming avec Scala
+# Exercice d'application Kafka — Installation, Administration et Streaming avec Scala
 
 **Objectif** : Deployer un cluster Apache Kafka avec Docker, maitriser les commandes CLI,
 puis developper un pipeline de streaming complet en Scala (Producer → Topic → Consumer).
