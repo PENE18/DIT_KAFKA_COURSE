@@ -1,0 +1,22 @@
+# SBT
+target/
+project/target/
+project/project/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Scala
+*.class
+*.log
+
+# Docker volumes
+kafka_data/
+
+# OS
+.DS_Store
+Thumbs.db

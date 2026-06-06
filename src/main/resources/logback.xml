@@ -1,0 +1,22 @@
+<configuration>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Reduire le bruit des logs internes Kafka -->
+  <logger name="org.apache.kafka" level="WARN"/>
+  <logger name="org.apache.zookeeper" level="WARN"/>
+
+  <!-- Nos classes en DEBUG pour voir tous les details -->
+  <logger name="OrderProducer$" level="DEBUG"/>
+  <logger name="OrderConsumer"  level="DEBUG"/>
+  <logger name="MainConsumer$"  level="DEBUG"/>
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>
